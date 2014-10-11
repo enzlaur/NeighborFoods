@@ -16,6 +16,9 @@ h1,h2,h3{
 
 #land {
     padding-top: 5%;
+    background-image: url("/images/city/banner.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 #navi {
@@ -26,6 +29,7 @@ h1,h2,h3{
     padding-left: 30px;
     /* Color */
     background: rgb(255, 116, 112);
+    
     color: white;
     /*
     border-bottom: 1.5px solid;
