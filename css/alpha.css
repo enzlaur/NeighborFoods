@@ -11,6 +11,7 @@ h1,h2,h3{
 
 .red-forced{
     background: rgb(255, 116, 112) !important;
+    color: white !important;
 }
 
 #land {
@@ -75,4 +76,8 @@ h1,h2,h3{
     border-radius: 4px;
     border-bottom: 4px solid;
     border-bottom-color: rgb(195,36,22);
+}
+
+.f-white {
+    color: white !important;
 }
