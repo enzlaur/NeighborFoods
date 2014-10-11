@@ -1,0 +1,180 @@
+ @*<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+    <title>jQuery Countdown</title>
+    <link rel="stylesheet" href="../../Timer/jquery.countdown.css">
+    <style type="text/css">
+        #defaultCountdown {
+            width: 240px;
+            height: 45px;
+        }
+    </style>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script src="../../Timer/jquery.plugin.js"></script>
+    <script src="../../Timer/jquery.countdown.js"></script>
+    <script>
+        
+        @{
+            DateTime dateTomorrow = DateTime.Now;
+        }
+        
+        $(function () {
+            var austDay = new Date();
+            austDay = new Date(austDay.getFullYear() + 1, 1 - 1, 26);
+            $('#defaultCountdown').countdown({until: austDay});
+            $('#year').text(austDay.getFullYear());
+        });
+    </script>
+</head>
+<body>
+    <h1>jQuery Countdown Basics</h1>
+    <p>
+        This page demonstrates the very basics of the
+        <a href="http://keith-wood.name/countdown.html">jQuery Countdown plugin</a>.
+        It contains the minimum requirements for using the plugin and
+        can be used as the basis for your own experimentation.
+    </p>
+    <p>For more detail see the <a href="http://keith-wood.name/countdownRef.html">documentation reference</a> page.</p>
+    <p>Counting down to 26 January <span id="year">2014</span>.</p>
+    <div id="defaultCountdown"></div>
+</body>
+</html>*@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>NeighborFoods - Three Salcedo</title>
+    <link rel="stylesheet" href="../../Laurenz/css/alpha.css" type="text/css">
+    <link rel="stylesheet" href="../../Laurenz/css/animate.min.css">
+    <link rel="stylesheet" href="../../Laurenz/css/animate.css">
+    <link rel="stylesheet" href="../../Laurenz/css/foundation-icons.css" type="text/css" />
+    <link rel="stylesheet" href="../../Laurenz/css/foundation.css" type="text/css" />
+    <link rel="stylesheet" href="../../Laurenz/css/cheatsheet.css" type="text/css" />
+    <link href='http://fonts.googleapis.com/css?family=Nunito:300' rel='stylesheet' type='text/css'>
+</head>
+<body>
+    <div id="navi" class="fixed">
+        NEIGHBORFUDZ
+    </div>
+
+
+    <div id="land" class="windowheight">
+        <div class="row">
+            <div class="large-12 columns">
+                <div class="row">
+                    <div class="large-3 columns invi">.</div>
+                    <div class="large-6 columns">
+                        <div style="text-align: center;" >
+                            <img src="../../Laurenz/images/nf%20logo.png" style="width: 70% !important;">
+                        </div>
+                        <div id="test-run" class="row"  >
+                            <div style="text-align: center;">
+                             </div>
+                        </div>
+                    </div>
+                    <div class="large-3 columns invi">.</div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+     
+
+    <!-- What is NF? -->
+    <div class="row container-light">
+        <h1>
+            <div style="text-align: center;" >
+                Want to Order some food without paying the Delivery Fee?
+            </div>
+        </h1>
+        <p> 
+            <div style="text-align: center;">
+                NeighborFudz is the thing for you, we are an alternative food delivery service for fast food shops. <br/>
+
+                It's your ordinary Deliver Service without paying the Delivery Fee! <br/>
+                
+               You just need to reach a minimum order fee with other people on your building<br/>
+           
+                Be advise there is a minimum time of an hour for you to get the minimum orders
+            </div>
+        </p>
+    </div>
+
+    <!-- A? -->
+    <div class="row container-light">
+        <h1>
+            <div style="text-align: center;">
+                We are operating on Makati<br /> Choose where you live in:
+            </div>
+        </h1>
+        <p>
+            <div style="text-align: center;">
+                <a href="@Url.Action("Dashboard","Home", new{location = "One Salcedo"})">One Salcedo</a> <br>
+                <a href="@Url.Action("Dashboard", "Home", new{location = "Two Salcedo"} )">Two Salcedo</a><br>
+                <a href="@Url.Action("Dashboard", "Home", new{location = "Three Salcedo"})">Three Salcedo</a> <br>
+                <a href="@Url.Action("Dashboard", "Home", new{location = "Regency"})">Regency</a> <br>
+                <a href="@Url.Action("Dashboard", "Home", new{location = "Lafayette"})">Lafayette</a> <br>
+                <a href="@Url.Action("Dashboard", "Home", new{location = "West Gate"})">West Gate</a> <br>
+                <a href="@Url.Action("Dashboard", "Home", new{location = "Alpha Salcedo"})">Alpha Salcedo</a> <br>
+                <a href="@Url.Action("Dashboard", "Home", new{location = "Nobel Plaza"})">Nobel Plaza</a> <br>
+                <a href="@Url.Action("Dashboard", "Home", new{location = "Makati Soho"})">Makati Soho</a> <br>
+                <a href="@Url.Action("Dashboard", "Home", new{location = "Parc Regent"})">Parc Regent</a> <br>
+                <a href="@Url.Action("Dashboard", "Home", new{location = "Ayala Escala"})">Ayala Escala</a> <br>
+                <a href="@Url.Action("Dashboard", "Home", new{location = "One Lafayette"})">One Lafayette</a> <br>
+                <a href="@Url.Action("Dashboard", "Home", new{location = "Two Lafayette"})">Two Lafayette</a> <br>
+                <a href="@Url.Action("Dashboard", "Home", new{location = "Paseo Park View"})">Paseo Park View</a> <br>
+                <a href="@Url.Action("Dashboard", "Home", new { location = "Salcedo Twin Towers" })">Salcedo Twin Towers</a>
+                <h4> If you did not find your place, come back in a couple of days</h4>
+
+        </div>
+        </p>
+    </div>
+
+    <!-- do not go beyond this line. It makes me sad if you do :( -->
+    <script src="../../Laurenz/js/wow.min.js"></script>
+    <script src="../../Laurenz/js/vendor/jquery.js"></script>
+    <script src="../../Laurenz/js/foundation.min.js"></script>
+    <script>
+        new WOW().init();
+    </script>
+    <script>
+        $(document).foundation();
+    </script>
+    <script>
+        $(document).ready(function () {
+            var bodyheight = $(window).height();
+            $(".windowheight").css('min-height', bodyheight);
+            $(window).resize(function () {
+                var bodyheight = $(window).height();
+                $(".windowheight").css('min-height', bodyheight);
+            });
+        });
+        $(".scroll").click(function (event) {
+            event.preventDefault();
+            //calculate destination place
+            var dest = 0;
+            if ($(this.hash).offset().top > $(document).height() - $(window).height()) {
+                dest = $(document).height() - $(window).height();
+            } else {
+                dest = $(this.hash).offset().top;
+            }
+            //go to destination
+            $('html,body').animate({ scrollTop: dest }, 1000, 'swing');
+        });
+    </script>
+    <script>
+        $(window).scroll(function () {
+            $('#bigEntrance').each(function () {
+                var imagePos = $(this).offset().top;
+                var topOfWindow = $(window).scrollTop();
+                if (imagePos < topOfWindow + 400) {
+                    $(this).addClass("bigEntrance");
+                }
+            });
+        });
+    </script>
+</body>
+</html>

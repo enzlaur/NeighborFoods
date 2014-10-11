@@ -15,7 +15,7 @@ h1,h2,h3{
 }
 
 #land {
-    padding-top: 10%;
+    padding-top: 5%;
 }
 
 #navi {
@@ -80,4 +80,19 @@ h1,h2,h3{
 
 .f-white {
     color: white !important;
+}
+
+.panel-location {
+    border-radius: 5px;
+    border: 2px solid;
+    border-color: rgb(255, 116, 112);
+    width: 150px !important;
+    height: 40px;
+    text-transform: uppercase;
+    text-align: center;
+    line-height: 35px;
+}
+
+#locale {
+    padding-top: 30px;
 }
