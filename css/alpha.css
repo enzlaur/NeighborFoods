@@ -1,0 +1,56 @@
+body{
+    background: rgb(235, 235, 235) !important;
+}
+
+h1,h2,h3{
+    font-family: 'Segoe UI', 'Segan Light', 'Arial Rounded' !important;
+}
+
+.red-forced{
+    background: rgb(255, 116, 112) !important;
+}
+
+#land {
+    padding-top: 10%;
+}
+
+#navi {
+    /* Size */
+    height: 50px;
+    width: 100%;
+    padding-top: 15px;
+    padding-left: 30px;
+    /* Color */
+    background: rgb(255, 116, 112);
+    color: white;
+    /*
+    border-bottom: 1.5px solid;
+    border-bottom-color: black;*/
+}
+
+.invi {
+    opacity: 0;
+}
+
+.btn-red {
+    height: 3em;    
+    width:50%;
+    padding-top: 0.7em;
+    background: rgb(255, 116, 112);
+    color: white;
+    border-radius: 4px;
+    border-bottom: 4px solid;
+    border-bottom-color: black;
+    
+}
+
+#test-run {
+    padding-top: 2em;
+}
+
+.container-light {
+    border-radius: 5px;
+    background: rgb(240, 240, 240);
+    padding: 10px 10px 10px 10px;
+    margin-bottom: 30px !important;
+}

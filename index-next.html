@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <title>NeighborFoods</title>                
+        <link rel="stylesheet" href="css/alpha.css" type="text/css">
+        <link rel="stylesheet" href="css/animate.min.css">
+        <link rel="stylesheet" href="css/animate.css">
+        <link rel="stylesheet" href="css/foundation-icons.css" type="text/css" />
+        <link rel="stylesheet" href="css/foundation.css" type="text/css" />
+        <link rel="stylesheet" href="css/cheatsheet.css" type="text/css"/>    
+        <link href='http://fonts.googleapis.com/css?family=Nunito:300' rel='stylesheet' type='text/css'>
+    </head>
+    <body>
+        <div id="navi" class="fixed">
+            NEIGHBORFUDZ
+        </div>
+        
+        
+        <div id="land" class="windowheight">
+            <div class="row">                
+                <div class="large-12 columns">
+                    <div class="row">
+                        <div class="large-3 columns invi">.</div>
+                        <div class="large-6 columns">
+                            <center>
+                                <img src="images/nf%20logo.png" style="width: 70% !important;">
+                            </center>
+                            <div id="test-run" class="row">
+                                <center>
+                                    <div class="btn-red">GO FOR A TEST RUN</div>
+                                </center>
+                            </div>
+                        </div>
+                        <div class="large-3 columns invi">.</div>
+                    </div>
+                    
+                </div>                
+            </div>
+        </div>
+        
+        <!-- What is NF? -->
+        <div class="row container-light">
+            <h1>
+                <center>
+                    WHAT IS NEIGHBORFUDZ
+                </center>
+            </h1>
+        </div>
+        
+        <!-- A? -->
+        <div class="row container-light">
+            <h1>
+                <center>
+                    Something
+                </center>
+            </h1>
+        </div>
+        <!-- do not go beyond this line. It makes me sad if you do :( -->
+        <script src="js/wow.min.js"></script>       
+        <script src="js/vendor/jquery.js"></script>
+	    <script src="js/foundation.min.js"></script>                 
+
+        <script>
+            new WOW().init();            
+        </script>
+	    <script>
+	       $(document).foundation();
+	    </script>
+        <script>
+            $(document).ready(function(){
+                var bodyheight = $(window).height();
+                $(".windowheight").css('min-height', bodyheight);
+                $(window).resize(function(){
+                var bodyheight = $(window).height();
+                $(".windowheight").css('min-height', bodyheight);
+                });
+            });
+            $(".scroll").click(function(event){
+                 event.preventDefault();
+                 //calculate destination place
+                 var dest=0;
+                 if($(this.hash).offset().top > $(document).height()-$(window).height()){
+                      dest=$(document).height()-$(window).height();
+                 }else{
+                      dest=$(this.hash).offset().top;
+                 }
+                 //go to destination
+                 $('html,body').animate({scrollTop:dest}, 1000,'swing');
+             });
+        </script>
+        <script>
+	       $(window).scroll(function() {
+              $('#bigEntrance').each(function(){
+                  var imagePos = $(this).offset().top;
+                  var topOfWindow = $(window).scrollTop();
+                  if (imagePos < topOfWindow+400) {
+				    $(this).addClass("bigEntrance");
+                  }
+              });
+           });       
+        </script>   
+    </body>
+</html>
