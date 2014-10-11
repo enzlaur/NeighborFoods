@@ -95,6 +95,9 @@ h1,h2,h3{
     text-transform: uppercase;
     text-align: center;
     line-height: 35px;
+    font-size: 1em;
+    color: white;
+    background: rgba(46, 44, 44, 0.71);
 }
 
 #locale {
